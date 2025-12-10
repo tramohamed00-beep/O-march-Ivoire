@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Paiement - O'Marché</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<header><h1>O'Marché - Paiement</h1></header>
+<section>
+    <h2>Choisissez votre mode de paiement</h2>
+    <button onclick="pay('Wave')">Wave</button>
+    <button onclick="pay('Orange Money')">Orange Money</button>
+    <button onclick="pay('MTN MoMo')">MTN MoMo</button>
+    <button onclick="pay('Moov Money')">Moov Money</button>
+    <button onclick="pay('Carte bancaire')">Carte bancaire</button>
+</section>
+<script>
+function pay(method){
+    alert('Paiement simulé via ' + method + '. Merci pour votre commande !');
+    localStorage.removeItem('cart');
+    window.location.href = "index.html";
+}
+</script>
+</body>
+</html>

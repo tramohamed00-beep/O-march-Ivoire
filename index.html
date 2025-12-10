@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>O'Marché - Votre marché en ligne</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+<header>
+    <h1>O'Marché</h1>
+    <nav>
+        <a href="#catalogue">Catalogue</a>
+        <a href="#panier">Panier</a>
+        <a href="paiement.html">Paiement</a>
+        <a href="suivi.html">Suivi</a>
+        <a href="#contact">Contact</a>
+    </nav>
+</header>
+
+<section id="hero">
+    <h2>Faites vos courses en ligne et faites-vous livrer partout !</h2>
+    <p>Rapide, simple et sécurisé.</p>
+    <a href="#catalogue" class="btn">Commander maintenant</a>
+</section>
+
+<section id="catalogue">
+    <h2>Nos produits</h2>
+    <div class="products">
+        <div class="product">
+            <img src="images/produit1.jpg" alt="Produit 1">
+            <h3>Produit 1</h3>
+            <p>1000 F</p>
+            <button onclick="addToCart('Produit 1', 1000)">Ajouter au panier</button>
+        </div>
+        <div class="product">
+            <img src="images/produit2.jpg" alt="Produit 2">
+            <h3>Produit 2</h3>
+            <p>2000 F</p>
+            <button onclick="addToCart('Produit 2', 2000)">Ajouter au panier</button>
+        </div>
+    </div>
+</section>
+
+<section id="panier">
+    <h2>Votre panier</h2>
+    <div id="cartItems"></div>
+    <p>Total : <span id="total">0</span> F</p>
+    <a href="paiement.html"><button>Passer à la commande</button></a>
+</section>
+
+<section id="contact">
+    <h2>Contactez-nous</h2>
+    <form>
+        <input type="text" placeholder="Nom" required>
+        <input type="email" placeholder="Email" required>
+        <textarea placeholder="Votre message"></textarea>
+        <button type="submit">Envoyer</button>
+    </form>
+</section>
+
+<footer>
+    <p>&copy; 2025 O'Marché - Tous droits réservés</p>
+</footer>
+
+<script src="script.js"></script>
+</body>
+</html>
